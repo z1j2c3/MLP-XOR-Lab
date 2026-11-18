@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M · Lab — 个人网站与心情实验室</title>
+<meta name="description" content="课程作业展示站：个人主页 + MLP 心情实验室（神经网络参数学习与可视化）。">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <a class="brand" href="#home">M · Lab <span class="bilingual">个人网站</span></a>
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#joys">Joys</a>
+    <a href="#notes">Notes</a>
+    <a href="#guestbook">Guestbook</a>
+    <a href="#moodlab">Mood Lab ↗</a>
+  </div>
+</nav>
+
+<!-- ============ 01 / HOME ============ -->
+<header class="hero wrap" id="home">
+  <div class="kicker">A little space of my own</div>
+  <h1>M · Lab<span class="bilingual">个人作业网站</span></h1>
+  <p class="signature">脚踩在地上，每一步都是一个响亮的吻。</p>
+  <p class="lead">一个关于学习、神经网络与日常小确幸的角落。<br>把生活里的小事，交给一个正在学习的神经网络。</p>
+  <p>
+    <a class="btn solid" href="#moodlab">进入心情实验室 ↗</a>
+    <button class="btn" id="openMusic">♫ 听点音乐</button>
+  </p>
+  <div class="scroll-hint">向下滑动 ↓ &nbsp;·&nbsp; 01 / 07</div>
+</header>
+
+<!-- ============ 02 / ABOUT ============ -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="chapter">02 / 07 · A LITTLE ABOUT ME</div>
+    <h2>关于 M <span class="bilingual">About</span></h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <p class="lead mt-0">你好，我是 M。这里存放我的课程作业、AI 实验，和一些值得珍藏的日常。</p>
+        <table>
+          <tr><th>Name</th><td>M · Lab</td></tr>
+          <tr><th>Focus</th><td>机器学习 / 可视化 / 网页</td></tr>
+          <tr><th>Motto</th><td>Happy every day.</td></tr>
+          <tr><th>WeChat</th><td class="mono">m-lab-2026</td></tr>
+          <tr><th>Email</th><td class="mono">hello@example.com</td></tr>
+        </table>
+        <p class="small faint">※ 以上为示例信息，可自行替换。</p>
+      </div>
+      <div class="card">
+        <div class="divider-label">A small album · 小小相册</div>
+        <div id="album" style="text-align:center;">
+          <div id="albumArt" style="height:220px;border-radius:10px;margin-bottom:12px;"></div>
+          <div class="small muted" id="albumCaption">01 / 06</div>
+          <p style="margin-top:12px;">
+            <button class="btn" id="albumPrev">← 上一张</button>
+            <button class="btn" id="albumNext">下一张 →</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 / WORK ============ -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="chapter">03 / 07 · MY WORK WITH AI</div>
+    <h2>我的 AI 作品 <span class="bilingual">My work</span></h2>
+    <p class="lead">用 AI 探索想法，再把它们变成可以分享的作品。</p>
+    <div class="grid grid-3">
+      <div class="card"><span class="tag">PROJECT 01</span><h3 style="margin-top:12px;">MLP 心情实验室</h3><p class="small muted">用 2→2→1 的神经网络学习 XOR，可视化参数如何被一点点调整。</p><a class="text-link small" href="mlp.html">打开实验 ↗</a></div>
+      <div class="card"><span class="tag">PROJECT 02</span><h3 style="margin-top:12px;">XOR 参数学习</h3><p class="small muted">观察权重、偏置、损失与准确率在训练中的变化，对比两种框架写法。</p><a class="text-link small" href="mlp.html#train">查看训练 ↗</a></div>
+      <div class="card"><span class="tag">PROJECT 03</span><h3 style="margin-top:12px;">这个网站</h3><p class="small muted">从结构到样式，从前端交互到本地存储，一个可以持续生长的作业站。</p><a class="text-link small" href="#home">回到顶部 ↗</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 / JOYS ============ -->
+<section class="section" id="joys">
+  <div class="wrap">
+    <div class="chapter">04 / 07 · THINGS THAT MAKE A DAY</div>
+    <h2>小确幸 <span class="bilingual">Little joys</span></h2>
+    <p class="lead">Someday, I'd like to have a cat, live with the ones I love, and travel widely across the globe.</p>
+    <div>
+      <span class="tag">CATS 猫</span>
+      <span class="tag">READING 阅读</span>
+      <span class="tag">FILMS 电影</span>
+      <span class="tag">WALKS 散步</span>
+      <span class="tag">CODE 编码</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 / NOTES ============ -->
+<section class="section" id="notes">
+  <div class="wrap">
+    <div class="chapter">05 / 07 · LIFE IN FRAGMENTS</div>
+    <h2>我的动态 <span class="bilingual">In motion</span></h2>
+    <p class="lead">把日常片段、照片和值得珍藏的时刻留在这里。仅本人可发布。</p>
+
+    <div class="card" style="margin-bottom:20px;">
+      <div id="notesOwnerBox">
+        <button class="btn" id="notesUnlockBtn">Owner access · 管理员解锁</button>
+      </div>
+      <div id="notesEditor" class="hidden">
+        <div class="field"><label>A MOMENT TO KEEP · 写一段动态</label><textarea id="noteText" placeholder="今天发生了什么值得记住的小事？"></textarea></div>
+        <div class="field"><label>ADD A PHOTO · 添加图片（可选，≤4MB）</label><input type="file" id="notePhoto" accept="image/*"></div>
+        <button class="btn solid" id="notePublish">Publish 发布</button>
+        <button class="btn" id="notesLockBtn">Lock 锁定</button>
+      </div>
+    </div>
+
+    <div id="notesList" class="grid grid-2"></div>
+  </div>
+</section>
+
+<!-- ============ 06 / GUESTBOOK ============ -->
+<section class="section" id="guestbook">
+  <div class="wrap">
+    <div class="chapter">06 / 07 · A NOTE FROM YOU</div>
+    <h2>留言互动 <span class="bilingual">Guestbook</span></h2>
+    <p class="lead">路过这里，欢迎留下一句问候，或分享此刻的心情。所有访客都能看到留言。</p>
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="field"><label>NAME · 昵称</label><input id="guestName" maxlength="24" placeholder="怎么称呼你？"></div>
+        <div class="field"><label>YOUR NOTE · 留言</label><textarea id="guestText" maxlength="500" placeholder="写点什么吧……"></textarea></div>
+        <div class="field"><label>ADD A PHOTO · 添加图片（可选，≤4MB）</label><input type="file" id="guestPhoto" accept="image/*"></div>
+        <button class="btn solid" id="guestSend">Send note 发送</button>
+        <p class="small faint" id="guestHint"></p>
+      </div>
+      <div>
+        <div class="card" style="margin-bottom:12px;">
+          <div id="guestOwnerBox"><button class="btn" id="guestUnlockBtn">管理员入口 · Owner access</button></div>
+          <div id="guestEditor" class="hidden"><span class="small muted" id="guestOwnerStatus">管理员已解锁 · 可删除留言</span> <button class="btn" id="guestLockBtn" style="margin-left:8px;">Lock 锁定</button></div>
+        </div>
+        <div id="guestList"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 / MOOD LAB ============ -->
+<section class="section" id="moodlab">
+  <div class="wrap center">
+    <div class="chapter">07 / 07 · A LITTLE SCIENCE OF HAPPINESS</div>
+    <h2>Mood Lab. <span class="bilingual">心情实验室</span></h2>
+    <p class="lead" style="margin:0 auto 24px;">今天的我，开心吗？把生活中的小事，交给一个正在学习的神经网络。看它如何预测、犯错，再一点点调整自己。</p>
+    <a class="btn solid" href="mlp.html">进入 MLP 心情实验室 ↗</a>
+    <p class="small faint" style="margin-top:18px;">第二次作业 · 参数学习 · 过程可视化</p>
+    <p style="margin-top:28px;"><a class="text-link small" href="#home">BACK TO THE BEGINNING ↑</a></p>
+  </div>
+</section>
+
+<footer class="footer">M · Lab · 个人网站与心情实验室 · GitHub Pages 静态站 · 无后端</footer>
+
+<!-- ============ MUSIC PLAYER (modal) ============ -->
+<div id="musicModal" class="hidden" style="position:fixed;inset:0;z-index:100;background:rgba(43,42,38,.55);display:flex;align-items:center;justify-content:center;padding:20px;">
+  <div class="card" style="width:min(420px,100%);position:relative;">
+    <button id="musicClose" style="position:absolute;top:12px;right:14px;border:none;background:none;font-size:20px;cursor:pointer;">×</button>
+    <div class="kicker">Listening room</div>
+    <h3 style="margin-top:8px;">选一首曲子</h3>
+    <div class="field">
+      <label>CHOOSE A TRACK</label>
+      <select id="trackSelect">
+        <option value="0">321 对不起</option>
+        <option value="1">far away from home</option>
+        <option value="2">乡间的路</option>
+      </select>
+    </div>
+    <p class="small faint">网页用 Web Audio 合成一段简单的旋律，无需外部音频文件。</p>
+    <p style="display:flex;gap:10px;align-items:center;">
+      <button class="btn solid" id="musicPlay">▶ 播放</button>
+      <button class="btn" id="musicStop">■ 停止</button>
+      <span class="small faint" id="musicTime">0:00</span>
+    </p>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---------------- Album ---------------- */
+  const albumColors = [
+    ["#e7d9c6", "#c98a5e"], ["#d8e0d2", "#5c8a6a"],
+    ["#e6d6dc", "#b26b7d"], ["#d9e2ea", "#3f6f9f"],
+    ["#efe2c9", "#c8a24a"], ["#ded9ea", "#7a6ba8"]
+  ];
+  let albumIndex = 0;
+  const albumArt = document.getElementById("albumArt");
+  const albumCaption = document.getElementById("albumCaption");
+  function renderAlbum() {
+    const [bg, fg] = albumColors[albumIndex];
+    albumArt.style.background =
+      "radial-gradient(circle at 30% 30%, " + fg + " 0%, transparent 45%), " +
+      "linear-gradient(135deg, " + bg + ", #fffdf8)";
+    albumArt.style.display = "grid";
+    albumArt.style.placeItems = "center";
+    albumArt.innerHTML = '<div style="font-family:Georgia,serif;font-size:64px;color:' + fg + ';opacity:.75;">✿</div>';
+    albumCaption.textContent = String(albumIndex + 1).padStart(2, "0") + " / 06";
+  }
+  document.getElementById("albumPrev").onclick = function () { albumIndex = (albumIndex + 5) % 6; renderAlbum(); };
+  document.getElementById("albumNext").onclick = function () { albumIndex = (albumIndex + 1) % 6; renderAlbum(); };
+  renderAlbum();
+
+  /* ---------------- Music (Web Audio) ---------------- */
+  const modal = document.getElementById("musicModal");
+  document.getElementById("openMusic").onclick = function () { modal.classList.remove("hidden"); };
+  document.getElementById("musicClose").onclick = function () { stopMusic(); modal.classList.add("hidden"); };
+  modal.addEventListener("click", function (e) { if (e.target === modal) { stopMusic(); modal.classList.add("hidden"); } });
+
+  let audioCtx = null, musicTimer = null, musicStep = 0, startTime = 0;
+  const tracks = [
+    [523, 587, 659, 587, 523, 440, 494, 523],
+    [392, 523, 659, 784, 659, 523, 440, 392],
+    [440, 494, 523, 587, 523, 494, 440, 392]
+  ];
+  function beep(freq) {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const osc = audioCtx.createOscillator(), gain = audioCtx.createGain();
+    osc.type = "sine";
+    osc.frequency.value = freq;
+    gain.gain.setValueAtTime(0.0001, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.18, audioCtx.currentTime + 0.02);
+    gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.32);
+    osc.connect(gain); gain.connect(audioCtx.destination);
+    osc.start(); osc.stop(audioCtx.currentTime + 0.34);
+  }
+  function playMusic() {
+    stopMusic();
+    const seq = tracks[Number(document.getElementById("trackSelect").value)];
+    musicStep = 0; startTime = Date.now();
+    beep(seq[0]);
+    musicTimer = setInterval(function () {
+      musicStep = (musicStep + 1) % seq.length;
+      beep(seq[musicStep]);
+      document.getElementById("musicTime").textContent =
+        "0:" + String(Math.floor((Date.now() - startTime) / 1000) % 60).padStart(2, "0");
+    }, 420);
+    document.getElementById("musicPlay").textContent = "▶ 播放中…";
+  }
+  function stopMusic() {
+    if (musicTimer) clearInterval(musicTimer);
+    musicTimer = null;
+    document.getElementById("musicPlay").textContent = "▶ 播放";
+  }
+  document.getElementById("musicPlay").onclick = playMusic;
+  document.getElementById("musicStop").onclick = function () { stopMusic(); document.getElementById("musicTime").textContent = "0:00"; };
+
+  /* ---------------- Storage helpers ---------------- */
+  const K_NOTES = "mlplab.notes", K_GUEST = "mlplab.guest", K_OWNER = "mlplab.owner";
+  function load(key) { try { return JSON.parse(localStorage.getItem(key)) || []; } catch (e) { return []; } }
+  function save(key, val) { localStorage.setItem(key, JSON.stringify(val)); }
+  function isOwner() { return sessionStorage.getItem(K_OWNER) === "1"; }
+  function compressImage(file, cb) {
+    if (!file) return cb(null);
+    if (file.size > 4 * 1024 * 1024) { cb(null, true); return; }
+    if (file.type === "image/gif") { const r = new FileReader(); r.onload = function () { cb(r.result); }; r.readAsDataURL(file); return; }
+    const r = new FileReader();
+    r.onload = function () {
+      const img = new Image();
+      img.onload = function () {
+        const scale = Math.min(1, 1200 / Math.max(img.width, img.height));
+        const c = document.createElement("canvas");
+        c.width = Math.round(img.width * scale); c.height = Math.round(img.height * scale);
+        c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+        cb(c.toDataURL("image/jpeg", 0.8));
+      };
+      img.src = r.result;
+    };
+    r.readAsDataURL(file);
+  }
+  function el(tag, cls, text) { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+  function timeStr(ts) { const d = new Date(ts); return d.toLocaleDateString("zh-CN") + " " + d.toLocaleTimeString("zh-CN", {hour:"2-digit",minute:"2-digit"}); }
+
+  /* ---------------- Notes ---------------- */
+  const notesList = document.getElementById("notesList");
+  function renderNotes() {
+    notesList.innerHTML = "";
+    load(K_NOTES).slice().reverse().forEach(function (n) {
+      const card = el("div", "card");
+      card.appendChild(el("div", "small faint", timeStr(n.ts)));
+      card.appendChild(el("p", "", n.text));
+      if (n.img) { const im = document.createElement("img"); im.src = n.img; im.style.cssText = "border-radius:10px;margin-top:8px;"; card.appendChild(im); }
+      if (isOwner()) {
+        const del = el("button", "btn", "删除");
+        del.style.cssText = "margin-top:12px;border-color:var(--accent);color:var(--accent);";
+        del.onclick = function () { save(K_NOTES, load(K_NOTES).filter(function (x) { return x.id !== n.id; })); renderNotes(); };
+        card.appendChild(del);
+      }
+      notesList.appendChild(card);
+    });
+  }
+  document.getElementById("notesUnlockBtn").onclick = function () {
+    const pw = prompt("管理员密码（演示）：");
+    if (pw === "mlp2026") { sessionStorage.setItem(K_OWNER, "1"); syncOwnerUI(); }
+    else alert("密码不正确");
+  };
+  document.getElementById("notesLockBtn").onclick = function () { sessionStorage.removeItem(K_OWNER); syncOwnerUI(); };
+  document.getElementById("notePublish").onclick = function () {
+    const text = document.getElementById("noteText").value.trim();
+    if (!text) { alert("先写点内容吧"); return; }
+    compressImage(document.getElementById("notePhoto").files[0], function (img, tooBig) {
+      if (tooBig) { alert("图片超过 4MB"); return; }
+      const arr = load(K_NOTES);
+      arr.push({ id: Date.now(), ts: Date.now(), text: text, img: img });
+      save(K_NOTES, arr);
+      document.getElementById("noteText").value = ""; document.getElementById("notePhoto").value = "";
+      renderNotes();
+    });
+  };
+  function syncOwnerUI() {
+    document.getElementById("notesOwnerBox").classList.toggle("hidden", isOwner());
+    document.getElementById("notesEditor").classList.toggle("hidden", !isOwner());
+    document.getElementById("guestOwnerBox").classList.toggle("hidden", isOwner());
+    document.getElementById("guestEditor").classList.toggle("hidden", !isOwner());
+    renderNotes(); renderGuest();
+  }
+
+  /* ---------------- Guestbook ---------------- */
+  const guestList = document.getElementById("guestList");
+  function renderGuest() {
+    guestList.innerHTML = "";
+    load(K_GUEST).slice().reverse().forEach(function (g) {
+      const card = el("div", "card");
+      card.style.marginBottom = "12px";
+      const head = el("div", "small");
+      head.appendChild(el("strong", "", g.name));
+      head.appendChild(document.createTextNode(" · " + timeStr(g.ts)));
+      card.appendChild(head);
+      card.appendChild(el("p", "", g.text));
+      if (g.img) { const im = document.createElement("img"); im.src = g.img; im.style.cssText = "border-radius:10px;margin-top:8px;"; card.appendChild(im); }
+      if (isOwner()) {
+        const del = el("button", "btn", "删除");
+        del.style.cssText = "margin-top:12px;border-color:var(--accent);color:var(--accent);";
+        del.onclick = function () { save(K_GUEST, load(K_GUEST).filter(function (x) { return x.id !== g.id; })); renderGuest(); };
+        card.appendChild(del);
+      }
+      guestList.appendChild(card);
+    });
+  }
+  document.getElementById("guestUnlockBtn").onclick = function () {
+    const pw = prompt("管理员密码（演示）：");
+    if (pw === "mlp2026") { sessionStorage.setItem(K_OWNER, "1"); syncOwnerUI(); }
+    else alert("密码不正确");
+  };
+  document.getElementById("guestLockBtn").onclick = function () { sessionStorage.removeItem(K_OWNER); syncOwnerUI(); };
+  document.getElementById("guestSend").onclick = function () {
+    const name = document.getElementById("guestName").value.trim() || "匿名访客";
+    const text = document.getElementById("guestText").value.trim();
+    if (!text) { alert("留言内容不能为空"); return; }
+    compressImage(document.getElementById("guestPhoto").files[0], function (img, tooBig) {
+      if (tooBig) { document.getElementById("guestHint").textContent = "图片超过 4MB，请换一张"; return; }
+      const arr = load(K_GUEST);
+      arr.push({ id: Date.now(), ts: Date.now(), name: name, text: text, img: img });
+      save(K_GUEST, arr);
+      document.getElementById("guestText").value = ""; document.getElementById("guestPhoto").value = "";
+      document.getElementById("guestHint").textContent = "已发送，谢谢你的留言 ✓";
+      renderGuest();
+    });
+  };
+
+  syncOwnerUI();
+})();
+</script>
+</body>
+</html>
